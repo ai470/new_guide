@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гайд: Способы инвестирования в золото для частного инвестора</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ══════════════════════════════════════════════════════
+       HERO SECTION
+    ══════════════════════════════════════════════════════ */
+    .hero-wrapper {
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: #fff;
+      background:
+        radial-gradient(ellipse 55% 100% at 8%  55%, rgba(18, 58, 195, 0.45) 0%, transparent 58%),
+        radial-gradient(ellipse 35% 55%  at 88% 45%, rgba(8,  22, 80,  0.22) 0%, transparent 55%),
+        linear-gradient(148deg, #0b1c4a 0%, #07122e 45%, #050e24 100%);
+    }
+
+    .hero {
+      width: 100%;
+      max-width: 1400px;
+      border-radius: 18px;
+      position: relative;
+      overflow: visible;
+      display: flex;
+      align-items: stretch;
+      filter: drop-shadow(0 8px 48px rgba(4, 12, 40, 0.7));
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: -1.5px;
+      border-radius: 20px;
+      background: linear-gradient(
+        120deg,
+        rgba(140, 95,  8, 0.12)  0%,
+        rgba(230, 178, 45, 0.75) 18%,
+        rgba(255, 215, 70, 0.92) 26%,
+        rgba(185, 135, 18, 0.35) 40%,
+        rgba(120, 80,  5, 0.08)  55%,
+        rgba(200, 150, 22, 0.4)  68%,
+        rgba(245, 192, 48, 0.8)  78%,
+        rgba(175, 125, 15, 0.3)  88%,
+        rgba(140, 95,  8, 0.12)  100%
+      );
+      background-size: 300% 300%;
+      animation: borderShimmer 9s ease-in-out infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+    @keyframes borderShimmer {
+      0%   { background-position: 0%   50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0%   50%; }
+    }
+
+    .hero__clip {
+      width: 100%;
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: stretch;
+    }
+    .hero__bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 55% 100% at 8%  55%, rgba(18, 58, 195, 0.6) 0%, transparent 58%),
+        radial-gradient(ellipse 35% 55%  at 88% 45%, rgba(8,  22, 80,  0.3) 0%, transparent 55%),
+        linear-gradient(148deg, #0c1e52 0%, #07122e 45%, #050e24 100%);
+    }
+    .hero__dots {
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle, rgba(80, 130, 255, 0.12) 1px, transparent 1px);
+      background-size: 34px 34px;
+      pointer-events: none;
+    }
+    .hero__circuit {
+      position: absolute; right: 0; top: 0; width: 55%; height: 100%;
+      pointer-events: none; overflow: hidden;
+    }
+    .hero__circuit svg { width: 100%; height: 100%; opacity: 0.16; }
+
+    .hero__inner {
+      position: relative; z-index: 10; width: 100%;
+      min-height: clamp(500px, 52vw, 700px);
+      padding: 72px 0 72px 80px;
+      isolation: isolate;
+    }
+    .hero__content {
+      display: flex; flex-direction: column; max-width: 46%;
+      position: relative; z-index: 20;
+      padding-right: 24px;
+    }
+
+    .title-intro {
+      display: block;
+      font-size: clamp(28px, 3.4vw, 50px);
+      font-weight: 700; font-style: italic;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      color: #ffffff; margin-bottom: 2px;
+    }
+    .title-main {
+      display: block;
+      font-size: clamp(28px, 3.4vw, 52px);
+      font-weight: 900; line-height: 0.95;
+      text-transform: uppercase; letter-spacing: -0.01em;
+      background: linear-gradient(0.306turn, #FFE2AC 0%, #FFF1D8 48%, #FFE2AC 98%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 22px;
+    }
+
+    .hero__divider {
+      position: relative; width: 70%; height: 1.5px;
+      background: linear-gradient(90deg, transparent 0%, rgba(185,135,20,.45) 8%, rgba(245,195,50,.85) 35%, rgba(255,220,75,.95) 50%, rgba(200,148,22,.5) 75%, transparent 100%);
+      box-shadow: 0 0 6px rgba(255,200,40,.55), 0 0 14px rgba(220,160,20,.3);
+      margin-bottom: 22px; overflow: hidden;
+    }
+    .hero__divider::after {
+      content: ''; position: absolute; top: 0; left: -60%; width: 40%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,245,180,.95), transparent);
+      animation: dividerBlik 5s ease-in-out infinite;
+    }
+    @keyframes dividerBlik {
+      0%   { left: -60%; opacity: 0; }
+      10%  { opacity: 1; }
+      60%  { left: 130%; opacity: 1; }
+      70%  { opacity: 0; }
+      100% { left: 130%; opacity: 0; }
+    }
+
+    .subtitle-eye {
+      display: inline-block; position: relative;
+      padding: 9px 20px; margin-bottom: 30px;
+      border: 1px solid rgba(255,255,255,.18); border-radius: 100px;
+      background: rgba(255,255,255,.05);
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.12);
+      max-width: fit-content;
+    }
+    .hero__subtitle {
+      font-size: clamp(15px, 1.35vw, 18px); font-weight: 400;
+      color: rgba(255,255,255,.9); line-height: 1.4;
+    }
+
+    .hero__author {
+      display: inline-flex; flex-direction: column; gap: 8px;
+      padding-left: 18px; border-left: 2.5px solid rgba(210,160,35,.85);
+      margin-top: 46px;
+    }
+    .hero__author-name {
+      font-size: clamp(17px, 1.6vw, 24px); font-weight: 700;
+      background: linear-gradient(135deg, #C8900A 0%, #FFE2AC 45%, #D4A017 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero__author-role {
+      font-size: clamp(13px, 1.1vw, 16px); font-weight: 500;
+      color: rgba(255,255,255,.9);
+    }
+
+    .hero__disclaimer {
+      margin-top: 20px;
+      font-size: 11px; font-weight: 500;
+      color: rgba(255,255,255,0.4);
+      font-style: italic;
+    }
+
+    .hero__visual {
+      position: absolute; right: 8%; top: 50%; transform: translateY(-50%);
+      width: 42%;
+      pointer-events: none; z-index: 2;
+    }
+    .hero__glow {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -40%);
+      width: 70%; height: 60%;
+      background: radial-gradient(ellipse at center, rgba(200,150,20,.18) 0%, transparent 70%);
+      filter: blur(60px); pointer-events: none;
+      z-index: 0;
+    }
+    .hero__image {
+      display: block; width: 100%; position: relative; z-index: 1;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,.45));
+    }
+
+    /* ══════════════════════════════════════════════════════
+       GUIDE CONTENT
+    ══════════════════════════════════════════════════════ */
+    body { font-family: 'Montserrat', sans-serif; background: #dde2ee; }
+
+    .guide { display: flex; flex-direction: column; gap: 2px; padding: 2px 0 0; }
+
+    /* ── Section header: badge + title ──────────────────── */
+    .sh { display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; }
+    .sh__badge {
+      display: inline-block; background: #0d1f52; color: #ffffff;
+      padding: 7px 16px; border-radius: 5px;
+      font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+      max-width: fit-content;
+    }
+    .sh__title { font-size: clamp(22px, 2.4vw, 32px); font-weight: 900; color: #0d1a3e; line-height: 1.15; }
+
+    /* ── Shared item primitives ─────────────────────────── */
+    .it-num { font-size: 40px; font-weight: 900; line-height: 0.85; letter-spacing: -0.04em; flex-shrink: 0; }
+    .it-title { font-size: clamp(18px, 1.5vw, 21px); font-weight: 800; line-height: 1.3; letter-spacing: -0.01em; color: #0e2a6e; }
+    .it-body { list-style: none; display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+    .it-body li { font-size: clamp(14px, 1.1vw, 15.5px); font-weight: 500; color: #1e2140; line-height: 1.65; padding-left: 18px; position: relative; }
+    .it-body li::before { content: ''; position: absolute; left: 0; top: 9px; width: 5px; height: 5px; border-radius: 50%; background: #0d1f52; opacity: 0.55; }
+
+    /* ── Tips ────────────────────────────────────────────── */
+    .tips-group {
+      margin-top: 20px;
+      padding: 22px 26px;
+      background: linear-gradient(135deg, #142878 0%, #0d1f52 100%);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(13,31,82,0.45);
+    }
+    .tips-group__label {
+      display: block; margin-bottom: 12px;
+      font-size: 10.5px; font-weight: 800;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      background: linear-gradient(0.306turn, #FFE2AC 0%, #FFF1D8 48%, #FFE2AC 98%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .tip {
+      margin: 0; padding: 10px 0;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      font-size: 14.5px; line-height: 1.65;
+      color: #ffffff; font-weight: 700;
+    }
+    .tip:first-of-type { border-top: none; padding-top: 0; }
+
+    /* ── ALL BLOCKS — white base ──────────────────────── */
+    .b0, .b1, .b2, .b3, .b4, .b5, .bcl { background: #ffffff; }
+    .b0 { padding: 56px 0; }
+    .b1 { padding: 56px 0; }
+    .b2 { padding: 56px 0; }
+    .b3 { padding: 56px 0; }
+    .b4 { padding: 56px 0; }
+    .b5 { padding: 56px 0; }
+    .bcl { padding: 56px 0 72px; }
+
+    /* ── Block inner containers ─────────────────────────── */
+    .b0__inner, .b1__inner, .b2__inner, .b3__inner,
+    .b4__inner, .b5__inner, .bcl__inner {
+      max-width: 1400px; margin: 0 auto; padding: 0 56px;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       BLOCK 0 — Intro: Почему золото?
+    ══════════════════════════════════════════════════════ */
+    .b0__inner { display: grid; grid-template-columns: 1fr 400px; align-items: center; gap: 56px; }
+    .b0__text { }
+    .b0__lead {
+      font-size: clamp(15px, 1.2vw, 17px); font-weight: 500; color: #1e2140;
+      line-height: 1.75; margin-top: 0;
+    }
+    .b0__lead + .b0__lead { margin-top: 16px; }
+    .b0__share {
+      margin-top: 24px;
+      padding: 18px 24px;
+      background: #f0f3fc;
+      border: 1px solid #d4dbf0;
+      border-radius: 10px;
+      font-size: clamp(14px, 1.1vw, 15px);
+      color: #0d1a3e;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+    .b0__share strong {
+      color: #0d1f52;
+      font-weight: 800;
+    }
+
+    /* ── Stats comparison cards ──────────────────────── */
+    .b0__stats { display: flex; flex-direction: column; gap: 16px; }
+    .stat-card {
+      border-radius: 16px; padding: 28px 28px 24px;
+      display: flex; flex-direction: column; gap: 8px;
+      position: relative; overflow: hidden;
+    }
+    .stat-card--loss {
+      background: linear-gradient(135deg, #2a1a1a 0%, #1a0a0a 100%);
+      border: 1px solid rgba(220, 60, 60, 0.3);
+    }
+    .stat-card--gain {
+      background: linear-gradient(135deg, #142878 0%, #0d1f52 100%);
+      border: 1px solid rgba(245, 192, 48, 0.4);
+    }
+    .stat-card__label {
+      font-size: 10.5px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+    }
+    .stat-card__name {
+      font-size: clamp(14px, 1.2vw, 16px); font-weight: 700; color: #ffffff;
+      line-height: 1.3;
+    }
+    .stat-card__num {
+      font-size: clamp(44px, 4vw, 60px); font-weight: 900; line-height: 0.9;
+      letter-spacing: -0.04em; margin-top: 4px;
+    }
+    .stat-card--loss .stat-card__num { color: #ff6b6b; }
+    .stat-card--gain .stat-card__num {
+      background: linear-gradient(0.306turn, #FFE2AC 0%, #FFF1D8 48%, #FFE2AC 98%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .stat-card__period {
+      font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.45);
+      margin-top: 4px;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       BLOCK 1 — Цифровые методы (БПИФ, ОМС, Биржа)
+    ══════════════════════════════════════════════════════ */
+    .b1__inner { display: grid; grid-template-columns: 1fr 320px; align-items: start; gap: 0; }
+    .b1__content { padding-right: 48px; }
+    .b1 .items { display: flex; flex-direction: column; }
+    .b1 .item { padding: 24px 0; border-bottom: 1px solid #f0f2f8; }
+    .b1 .item:last-child { border-bottom: none; }
+    .b1 .item-hd { display: flex; align-items: flex-start; gap: 4px; margin-bottom: 10px; }
+    .b1 .it-num { color: rgba(13,31,82,0.1); width: 52px; text-align: center; }
+    .b1 .it-title { padding-top: 3px; flex: 1; }
+    .b1 .it-body { padding-left: 56px; }
+    .b1 .tips-group { margin-left: 56px; }
+    .b1 .item-callout { margin-left: 56px; margin-top: 14px; }
+
+    .b1__visual {
+      display: flex; flex-direction: column; gap: 14px;
+      padding: 72px 0 0; align-items: center; justify-content: flex-start;
+    }
+
+    /* Gold bar visual element */
+    .gold-bar {
+      width: 100%;
+      background: linear-gradient(135deg, #B8860B 0%, #FFD700 40%, #DAA520 60%, #B8860B 100%);
+      border-radius: 8px;
+      padding: 20px 24px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(180,140,0,0.35), inset 0 1px 0 rgba(255,255,255,0.3);
+    }
+    .gold-bar::before {
+      content: '';
+      position: absolute; top: 0; left: -60%; width: 40%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,240,0.6), transparent);
+      animation: goldSheen 4s ease-in-out infinite;
+    }
+    @keyframes goldSheen {
+      0%   { left: -60%; opacity: 0; }
+      10%  { opacity: 1; }
+      60%  { left: 130%; opacity: 1; }
+      70%  { opacity: 0; }
+      100% { left: 130%; opacity: 0; }
+    }
+    .gold-bar__symbol {
+      font-size: 28px; font-weight: 900; letter-spacing: 0.1em;
+      color: rgba(80, 50, 0, 0.7); text-align: center; display: block;
+    }
+    .gold-bar__text {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+      color: rgba(80,50,0,0.6); text-align: center; display: block; margin-top: 4px;
+    }
+
+    .price-ticker {
+      width: 100%;
+      background: #f8f9fd;
+      border: 1px solid #e4e8f4;
+      border-radius: 10px;
+      padding: 14px 18px;
+    }
+    .price-ticker__label {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+      color: #6070a0; margin-bottom: 8px;
+    }
+    .price-ticker__row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 8px 0; border-top: 1px solid #f0f2f8; font-size: 13px;
+    }
+    .price-ticker__row:first-of-type { border-top: none; padding-top: 0; }
+    .price-ticker__name { font-weight: 600; color: #0d1a3e; }
+    .price-ticker__val { font-weight: 800; color: #0d1f52; }
+    .price-ticker__val--up { color: #2a7a2a; }
+
+    /* ── item-callout shared ───────────────────────── */
+    .item-callout {
+      background: linear-gradient(135deg, #142878 0%, #0d1f52 100%);
+      border-radius: 12px; padding: 22px 26px;
+      font-size: 14px; line-height: 1.6; color: #ffffff; font-weight: 700;
+      box-shadow: 0 8px 32px rgba(13,31,82,0.45);
+    }
+    .item-callout strong {
+      background: linear-gradient(0.306turn, #FFE2AC 0%, #FFF1D8 48%, #FFE2AC 98%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      font-weight: 800;
+    }
+
+    /* ── ideal-for badge ────────────────────────────── */
+    .ideal-for {
+      margin-top: 16px; margin-left: 56px;
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 16px 20px;
+      background: linear-gradient(135deg, #7a5000 0%, #b8860b 40%, #8b6500 100%);
+      border-radius: 12px;
+      box-shadow: 0 6px 28px rgba(140,100,0,0.4), inset 0 1px 0 rgba(255,240,180,0.25);
+      max-width: fit-content;
+      position: relative; overflow: hidden;
+    }
+    .ideal-for::before {
+      content: '';
+      position: absolute; top: 0; left: -60%; width: 40%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,245,180,.25), transparent);
+      animation: goldSheen 5s ease-in-out infinite;
+    }
+    .ideal-for__icon {
+      font-size: 20px; flex-shrink: 0; margin-top: 1px;
+    }
+    .ideal-for__text {
+      display: flex; flex-direction: column; gap: 3px;
+    }
+    .ideal-for__label {
+      font-size: 9.5px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+      color: #0d1f52;
+    }
+    .ideal-for__value {
+      font-size: 13.5px; font-weight: 700; color: #fff8e0; line-height: 1.45;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       BLOCK 2 — Физические методы (Слитки, Акции)
+    ══════════════════════════════════════════════════════ */
+    .b2__rows { display: flex; flex-direction: column; }
+    .b2__row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 56px; padding: 28px 0; border-bottom: 1px solid #f0f2f8; }
+    .b2__row:last-child { border-bottom: none; }
+    .b2 .item { padding: 0; border-bottom: none; display: flex; flex-direction: column; }
+    .b2 .item-hd { display: flex; align-items: flex-start; gap: 4px; margin-bottom: 10px; }
+    .b2 .it-num { color: rgba(13,31,82,0.1); width: 52px; text-align: center; }
+    .b2 .it-title { padding-top: 3px; flex: 1; }
+    .b2 .it-body { padding-left: 56px; }
+    .b2 .tips-group { margin-left: 56px; margin-top: 14px; }
+    .b2 .item-callout { margin-left: 56px; margin-top: 14px; }
+    .b2 .ideal-for { margin-left: 56px; }
+
+    /* ══════════════════════════════════════════════════════
+       BLOCK 3 — Акции золотодобытчиков
+    ══════════════════════════════════════════════════════ */
+    .b3__layout { display: grid; grid-template-columns: 1fr 380px; gap: 56px; align-items: center; }
+    .b3__content { display: flex; flex-direction: column; gap: 36px; }
+    .b3__visual { display: flex; align-items: center; justify-content: center; }
+
+    .b3-item__num {
+      font-size: clamp(52px, 5.5vw, 80px); font-weight: 900; line-height: 1; letter-spacing: -0.04em;
+      background: linear-gradient(0.306turn, #B8860B 0%, #FFD700 40%, #FFF1D8 60%, #DAA520 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 24px;
+    }
+    .b3-item__title { font-size: clamp(16px, 1.4vw, 20px); font-weight: 800; color: #0d1a3e; margin-bottom: 24px; line-height: 1.3; }
+
+    /* company tiles */
+    .company-tiles { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+    .company-tile {
+      display: flex; align-items: center; justify-content: space-between;
+      background: #f5f7fc; border: 1px solid #e4e8f4; border-radius: 10px;
+      padding: 14px 18px;
+    }
+    .company-tile__name { font-size: 14px; font-weight: 700; color: #0d1a3e; }
+    .company-tile__ticker { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #6070a0; }
+    .company-tile__price { font-size: 14px; font-weight: 800; color: #0d1f52; }
+
+    /* portfolio ring visual */
+    .portfolio-ring {
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      background: conic-gradient(
+        rgba(218, 165, 32, 0.9) 0deg 36deg,      /* gold 10% */
+        rgba(13, 31, 82, 0.85) 36deg 360deg       /* other assets */
+      );
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 16px 56px rgba(13,31,82,0.25);
+      position: relative;
+    }
+    .portfolio-ring__inner {
+      width: 170px; height: 170px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 4px;
+      box-shadow: inset 0 4px 20px rgba(13,31,82,0.08);
+    }
+    .portfolio-ring__num {
+      font-size: 32px; font-weight: 900; letter-spacing: -0.03em;
+      background: linear-gradient(0.306turn, #B8860B 0%, #FFD700 50%, #DAA520 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .portfolio-ring__label {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+      color: #6070a0; text-align: center; max-width: 100px; line-height: 1.4;
+    }
+    .portfolio-ring__legend {
+      margin-top: 16px; display: flex; gap: 20px; justify-content: center;
+    }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: #3a4570; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ══════════════════════════════════════════════════════
+       CHECKLIST
+    ══════════════════════════════════════════════════════ */
+    .bcl__grid { display: flex; flex-direction: column; gap: 10px; }
+    .cl-item { display: flex; align-items: center; gap: 14px; padding: 14px 20px; background: #f8f9fd; border: 1.5px solid #e8ecf6; border-radius: 8px; font-size: clamp(13px, 1.05vw, 14.5px); font-weight: 600; color: #0d1a3e; cursor: pointer; user-select: none; transition: background 0.2s, border-color 0.2s; }
+    .cl-item:hover { background: #f0f3fc; border-color: #c5cef0; }
+    .cl-item.done { background: #eef6ee; border-color: #a8d5a8; color: #2d5a2d; }
+    .cl-box { flex-shrink: 0; width: 24px; height: 24px; border-radius: 5px; border: 2px solid #0d1f52; background: transparent; display: flex; align-items: center; justify-content: center; font-size: 14px; color: transparent; transition: background 0.2s, color 0.2s; }
+    .cl-item.done .cl-box { background: #2a7a2a; border-color: #2a7a2a; color: #fff; }
+    .cl-item.done .cl-text { text-decoration: line-through; opacity: 0.6; }
+
+    /* ── Dark section ───────────────────────────────── */
+    .dark-section {
+      background:
+        radial-gradient(ellipse 55% 100% at 8%  55%, rgba(18,58,195,0.45) 0%, transparent 58%),
+        radial-gradient(ellipse 35% 55%  at 88% 45%, rgba(8,22,80,0.22)  0%, transparent 55%),
+        linear-gradient(148deg, #0b1c4a 0%, #07122e 45%, #050e24 100%);
+    }
+
+    /* ── Outro ──────────────────────────────────────── */
+    .outro-wrapper {
+      font-family: 'Montserrat', sans-serif;
+      display: flex; align-items: center; justify-content: center;
+      padding: 56px 20px 40px;
+    }
+    .outro {
+      width: 100%; max-width: 1400px;
+      position: relative; border-radius: 18px; overflow: visible;
+      filter: drop-shadow(0 8px 48px rgba(4,12,40,0.7));
+    }
+    .outro::before {
+      content: ''; position: absolute; inset: -1.5px; border-radius: 20px;
+      background: linear-gradient(
+        120deg,
+        rgba(140,95,8,0.12) 0%, rgba(230,178,45,0.75) 18%,
+        rgba(255,215,70,0.92) 26%, rgba(185,135,18,0.35) 40%,
+        rgba(120,80,5,0.08) 55%, rgba(200,150,22,0.4) 68%,
+        rgba(245,192,48,0.8) 78%, rgba(175,125,15,0.3) 88%,
+        rgba(140,95,8,0.12) 100%
+      );
+      background-size: 300% 300%;
+      animation: borderShimmer 9s ease-in-out infinite;
+      z-index: 0; pointer-events: none;
+    }
+    .outro__clip {
+      width: 100%; border-radius: 18px; overflow: hidden;
+      position: relative; z-index: 1;
+      display: flex; align-items: stretch;
+    }
+    .outro__circuit {
+      position: absolute; right: 0; top: 0; width: 55%; height: 100%;
+      pointer-events: none; overflow: hidden;
+    }
+    .outro__circuit svg { width: 100%; height: 100%; opacity: 0.16; }
+    .outro__dots {
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle, rgba(80,130,255,0.12) 1px, transparent 1px);
+      background-size: 34px 34px; pointer-events: none;
+    }
+    .outro__inner {
+      position: relative; z-index: 10;
+      display: flex; align-items: center; gap: 40px;
+      min-height: clamp(300px, 28vw, 440px);
+      padding: 72px 80px;
+    }
+    .outro__content { flex: 1; }
+    .outro__title {
+      font-size: clamp(26px, 3vw, 48px); font-weight: 900; line-height: 1.15;
+      background: linear-gradient(0.306turn, #FFE2AC 0%, #FFF1D8 48%, #FFE2AC 98%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 24px;
+    }
+    .outro__sub {
+      font-size: clamp(15px, 1.35vw, 19px); font-weight: 400;
+      color: rgba(255,255,255,.85); line-height: 1.65; margin-bottom: 20px;
+    }
+    .outro__note {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 24px;
+      font-size: clamp(14px, 1.2vw, 17px); color: rgba(255,255,255,.92);
+      font-style: italic; font-weight: 500; line-height: 1.5;
+      border: 1px solid rgba(255,255,255,.18); border-radius: 100px;
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 2px 24px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.14);
+    }
+    .outro__visual {
+      flex: 0 0 auto; width: clamp(220px, 24vw, 360px);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .outro__visual img {
+      width: 100%; display: block;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,.45));
+    }
+
+    /* ── Socials ────────────────────────────────────── */
+    .bsoc {
+      padding: 0 20px 64px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .bsoc__heading {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(18px, 1.8vw, 24px); font-weight: 800; line-height: 1.4;
+      text-align: center; color: #ffffff;
+      max-width: 520px; margin: 0 auto 28px;
+    }
+    .bsoc__card {
+      background: #ffffff; border-radius: 16px;
+      padding: 8px 0;
+      box-shadow: 0 4px 32px rgba(13,31,82,0.1);
+      width: 100%; max-width: 480px;
+    }
+    .social-link {
+      display: flex; align-items: center; gap: 14px;
+      padding: 12px 20px;
+      text-decoration: none;
+      transition: background 0.15s;
+      border-radius: 10px;
+    }
+    .social-link:hover { background: #f5f7ff; }
+    .social-icon {
+      flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .social-icon svg { width: 22px; height: 22px; }
+    .social-icon--img { background: none !important; }
+    .social-icon--img img { width: 40px; height: 40px; object-fit: contain; border-radius: 10px; }
+    .social-icon--max img { width: 62px; height: 62px; }
+    .social-icon:not(.social-icon--img) { border-radius: 50%; }
+    .social-text {
+      font-size: 14.5px; font-weight: 600; color: #1a1f3a; line-height: 1.3;
+    }
+    .social-text span { font-weight: 400; color: #3a4080; text-decoration: underline; text-underline-offset: 2px; }
+
+    /* ═══════════════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .hero__inner { padding: 56px 0 56px 56px; }
+      .hero__content { max-width: 65%; }
+      .b0__inner { gap: 40px; }
+      .b1__inner { grid-template-columns: 1fr; }
+      .b1__visual { flex-direction: row; padding: 40px 0 0; justify-content: center; gap: 16px; }
+      .gold-bar { max-width: 200px; }
+      .price-ticker { max-width: 240px; }
+      .b3__layout { grid-template-columns: 1fr 280px; gap: 40px; }
+      .outro__inner { padding: 56px; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-wrapper { min-height: auto; padding: 16px; }
+      .hero, .hero__clip { border-radius: 14px; }
+      .hero__visual { display: none; }
+      .hero__inner { padding: 48px 40px; min-height: auto; }
+      .hero__content { max-width: 100%; }
+      .hero__subtitle { white-space: normal; }
+      .subtitle-eye { max-width: 100%; }
+
+      .b0__inner, .b1__inner, .b2__inner, .b3__inner,
+      .b4__inner, .b5__inner, .bcl__inner { padding: 0 32px; }
+      .b0, .b1, .b2, .b3, .b4, .b5, .bcl { padding: 40px 0; }
+      .sh { margin-bottom: 28px; }
+
+      .b0__inner { grid-template-columns: 1fr; }
+      .b0__stats { flex-direction: row; gap: 12px; }
+      .stat-card { flex: 1; }
+
+      .b1__inner { grid-template-columns: 1fr; }
+      .b1__content { padding-right: 0; }
+      .b1__visual { flex-direction: row; padding: 28px 0 0; }
+
+      .b2__row { grid-template-columns: 1fr; gap: 0; }
+      .b2__row .item:first-child { padding-bottom: 24px; border-bottom: 1px solid #f0f2f8; }
+      .b2 .tips-group, .b2 .item-callout, .b2 .ideal-for { margin-left: 0; }
+      .b2 .it-body { padding-left: 0; }
+
+      .b3__layout { grid-template-columns: 1fr; gap: 28px; }
+      .b3__visual { justify-content: center; }
+
+      .outro-wrapper { padding: 32px 16px; }
+      .outro__inner { flex-direction: column; padding: 48px 40px; gap: 28px; min-height: auto; }
+      .outro__visual { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .hero__visual { display: none; }
+      .hero__inner { padding: 40px 24px 44px; min-height: auto; }
+      .hero__content { max-width: 100%; }
+      .hero__author { margin-top: 28px; }
+
+      .b0__inner, .b1__inner, .b2__inner, .b3__inner,
+      .b4__inner, .b5__inner, .bcl__inner { padding: 0 16px; }
+      .b0, .b1, .b2, .b3, .b4, .b5, .bcl { padding: 28px 0; }
+
+      .b0__stats { flex-direction: column; }
+      .stat-card__num { font-size: 40px; }
+
+      .b1 .it-body { padding-left: 0; }
+      .b1 .tips-group, .b1 .item-callout, .b1 .ideal-for { margin-left: 0; }
+      .b1 .it-num { display: none; }
+      .b1 .item-hd { gap: 0; }
+
+      .b2 .it-num { display: none; }
+      .b2 .item-hd { gap: 0; }
+      .b2 .it-body { padding-left: 0; }
+
+      .b3-item__num { font-size: 52px; }
+
+      .tips-group { padding: 16px 18px; }
+      .tip { font-size: 13px; }
+
+      .outro-wrapper { padding: 20px 12px; }
+      .outro__inner { padding: 36px 24px; }
+      .outro__title { font-size: clamp(22px, 6vw, 32px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ HERO ══════════════════════════════════════════════ -->
+  <div class="hero-wrapper">
+    <section class="hero">
+      <div class="hero__clip">
+        <div class="hero__bg"></div>
+        <div class="hero__dots"></div>
+        <div class="hero__circuit">
+          <svg viewBox="0 0 640 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="#4a8aff" stroke-width="1" fill="none">
+              <line x1="0"   y1="500" x2="280" y2="0"/>
+              <line x1="90"  y1="500" x2="370" y2="0"/>
+              <line x1="180" y1="500" x2="460" y2="0"/>
+              <line x1="270" y1="500" x2="550" y2="0"/>
+              <line x1="360" y1="500" x2="640" y2="60"/>
+              <line x1="30"  y1="420" x2="210" y2="420"/>
+              <line x1="110" y1="308" x2="330" y2="308"/>
+              <line x1="195" y1="192" x2="430" y2="192"/>
+              <line x1="275" y1="88"  x2="510" y2="88"/>
+            </g>
+            <g fill="#6aa0ff">
+              <circle cx="30"  cy="420" r="2.5"/> <circle cx="210" cy="420" r="2.5"/>
+              <circle cx="110" cy="308" r="3"/>   <circle cx="330" cy="308" r="2.5"/>
+              <circle cx="195" cy="192" r="3"/>   <circle cx="430" cy="192" r="2.5"/>
+              <circle cx="275" cy="88"  r="3"/>   <circle cx="510" cy="88"  r="2.5"/>
+            </g>
+            <g fill="#a0c8ff" opacity="0.9">
+              <circle cx="110" cy="308" r="4.5"/>
+              <circle cx="195" cy="192" r="4.5"/>
+              <circle cx="275" cy="88"  r="4.5"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1>
+              <span class="title-intro">Гайд:</span>
+              <span class="title-main">Способы<br>инвестирования<br>в золото</span>
+            </h1>
+            <div class="hero__divider"></div>
+            <div class="subtitle-eye">
+              <p class="hero__subtitle">Для частного инвестора: 5 проверенных инструментов</p>
+            </div>
+            <div class="hero__author">
+              <span class="hero__author-name">Татьяна Волкова</span>
+              <span class="hero__author-role">Эксперт по созданию личного капитала</span>
+            </div>
+            <p class="hero__disclaimer">* Не является индивидуальной инвестиционной рекомендацией</p>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__glow"></div>
+          <img class="hero__image" src="image-Photoroom (12).png" alt="Золотые слитки">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ══ GUIDE CONTENT ══════════════════════════════════════ -->
+  <main class="guide">
+
+    <!-- ════════════════════════════════════════════════════
+         BLOCK 0 · Почему золото?
+    ════════════════════════════════════════════════════ -->
+    <section class="b0">
+      <div class="b0__inner">
+        <div class="b0__text">
+          <header class="sh">
+            <span class="sh__badge">Введение · Защитный актив</span>
+            <h2 class="sh__title">Золото — «тихая гавань»<br>для вашего капитала</h2>
+          </header>
+          <p class="b0__lead">
+            Когда рынки штормит, валюта теряет устойчивость или в мире растёт напряжённость — золото часто ведёт себя стабильно или даже растёт в цене. Именно поэтому опытные инвесторы включают его в портфель: не ради спекуляций, а для баланса и защиты.
+          </p>
+          <p class="b0__lead" style="margin-top:16px;">
+            В период с 2022 года российская экономика пережила беспрецедентное давление: санкции, геополитическая напряжённость, волатильность рубля и перестройка финансовых рынков. Результаты говорят сами за себя.
+          </p>
+          <div class="b0__share">
+            <strong>Оптимальная доля золота в портфеле — 5–10%</strong> от общего объёма активов. Это позволяет сохранить защитную функцию, не жертвуя потенциалом роста остального портфеля.
+          </div>
+        </div>
+        <div class="b0__stats">
+          <div class="stat-card stat-card--loss">
+            <div class="stat-card__label">с февраля 2022</div>
+            <div class="stat-card__name">Индекс МосБиржи</div>
+            <div class="stat-card__num">−35%</div>
+            <div class="stat-card__period">с ~4 300 до ~2 800 пунктов в марте 2022</div>
+          </div>
+          <div class="stat-card stat-card--gain">
+            <div class="stat-card__label">с февраля 2022</div>
+            <div class="stat-card__name">Золото (в рублях)</div>
+            <div class="stat-card__num">+95%</div>
+            <div class="stat-card__period">Рост цены + ослабление рубля = двойной эффект</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════
+         BLOCK 1 · Цифровые инструменты (способы 1–3)
+    ════════════════════════════════════════════════════ -->
+    <section class="b1">
+      <div class="b1__inner">
+        <div class="b1__content">
+          <header class="sh">
+            <span class="sh__badge">Блок 01 · Цифровые инструменты</span>
+            <h2 class="sh__title">Инвестируйте в золото<br>не выходя из приложения</h2>
+          </header>
+          <div class="items">
+
+            <div class="item">
+              <div class="item-hd">
+                <span class="it-num">1</span>
+                <h3 class="it-title">Биржевые фонды на золото (БПИФ)</h3>
+              </div>
+              <ul class="it-body">
+                <li>Покупайте паи фонда, который хранит золото в слитках и отслеживает биржевую стоимость.</li>
+                <li>Пример: Т-Капитал <strong>TGLD</strong> — цена пая от ~13,7 ₽.</li>
+                <li>Покупка в один клик через приложение брокера.</li>
+                <li>Высокая ликвидность: продали — деньги сразу на счёте.</li>
+              </ul>
+              <div class="tips-group">
+                <div class="tips-group__label">Плюсы и минусы</div>
+                <div class="tip">✅ Вход от нескольких рублей — доступно с любым бюджетом</div>
+                <div class="tip">✅ Минимальный спред между покупкой и продажей</div>
+                <div class="tip">⚠️ Небольшая комиссия за управление фондом (уже в цене пая)</div>
+              </div>
+              <div class="ideal-for"><span class="ideal-for__icon">🎯</span><div class="ideal-for__text"><span class="ideal-for__label">Идеально для</span><span class="ideal-for__value">Новичков и тех, кто ценит простоту и мобильность</span></div></div>
+            </div>
+
+            <div class="item">
+              <div class="item-hd">
+                <span class="it-num">2</span>
+                <h3 class="it-title">Обезличенный металлический счёт (ОМС)</h3>
+              </div>
+              <ul class="it-body">
+                <li>Специальный банковский счёт: баланс учитывается в граммах золота.</li>
+                <li>Физически металл не передаётся, но капитал растёт с курсом золота.</li>
+                <li>Пример: Альфа-Банк — покупка ~11 032 ₽/г, продажа ~11 284 ₽/г.</li>
+                <li>Можно пополнять частями — удобно для регулярных инвестиций.</li>
+              </ul>
+              <div class="tips-group">
+                <div class="tips-group__label">Плюсы и минусы</div>
+                <div class="tip">✅ Не нужно думать о хранении и безопасности</div>
+                <div class="tip">✅ Быстрая конвертация обратно в рубли</div>
+                <div class="tip">⚠️ Счета ОМС не застрахованы АСВ</div>
+                <div class="tip">⚠️ Высокий спред — банк зарабатывает на разнице курсов</div>
+              </div>
+              <div class="ideal-for"><span class="ideal-for__icon">🎯</span><div class="ideal-for__text"><span class="ideal-for__label">Идеально для</span><span class="ideal-for__value">Консервативных инвесторов с горизонтом от 3 лет</span></div></div>
+            </div>
+
+            <div class="item">
+              <div class="item-hd">
+                <span class="it-num">3</span>
+                <h3 class="it-title">Покупка золота на бирже (GLDRUB_TOM)</h3>
+              </div>
+              <ul class="it-body">
+                <li>Прямая покупка золота через брокера — как обычная ценная бумага.</li>
+                <li>Пример: Т-Инвестиции, тикер <strong>GLDRUB_TOM</strong> — ~11 171 ₽ за 1 грамм.</li>
+                <li>Прозрачная биржевая цена, низкий спред, сделка исполняется мгновенно.</li>
+                <li>Полный контроль через торговый терминал.</li>
+              </ul>
+              <div class="tips-group">
+                <div class="tips-group__label">Плюсы и минусы</div>
+                <div class="tip">✅ Минимальный спред и рыночная цена без наценок</div>
+                <div class="tip">✅ Высокая ликвидность и прозрачность</div>
+                <div class="tip">⚠️ При продаже ранее 3 лет — самостоятельная подача 3-НДФЛ (13% с прибыли)</div>
+                <div class="tip">⚠️ Порог входа выше, чем у фондов (лот = 1 грамм)</div>
+              </div>
+              <div class="ideal-for"><span class="ideal-for__icon">🎯</span><div class="ideal-for__text"><span class="ideal-for__label">Идеально для</span><span class="ideal-for__value">Тех, кто хочет максимального контроля над сделками</span></div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="b1__visual">
+          <div class="gold-bar">
+            <span class="gold-bar__symbol">Au</span>
+            <span class="gold-bar__text">999.9 Fine Gold</span>
+          </div>
+          <div class="price-ticker">
+            <div class="price-ticker__label">Ориентиры цен</div>
+            <div class="price-ticker__row">
+              <span class="price-ticker__name">TGLD (пай)</span>
+              <span class="price-ticker__val price-ticker__val--up">~13,7 ₽</span>
+            </div>
+            <div class="price-ticker__row">
+              <span class="price-ticker__name">ОМС (покупка)</span>
+              <span class="price-ticker__val">~11 032 ₽/г</span>
+            </div>
+            <div class="price-ticker__row">
+              <span class="price-ticker__name">GLDRUB_TOM</span>
+              <span class="price-ticker__val">~11 171 ₽/г</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════
+         BLOCK 2 · Физические инструменты (способы 4–5)
+    ════════════════════════════════════════════════════ -->
+    <section class="b2">
+      <div class="b2__inner">
+        <header class="sh">
+          <span class="sh__badge">Блок 02 · Физические и корпоративные инструменты</span>
+          <h2 class="sh__title">Золото в руках<br>и через компании</h2>
+        </header>
+
+        <div class="b2__rows">
+          <div class="b2__row">
+            <div class="item">
+              <div class="item-hd">
+                <span class="it-num">4</span>
+                <h3 class="it-title">Физические слитки золота</h3>
+              </div>
+              <ul class="it-body">
+                <li>Покупайте в банке или у сертифицированного дилера.</li>
+                <li>Храните дома, в сейфе или банковской ячейке.</li>
+                <li>Пример: Сбербанк — покупка ~10 554 ₽/г, продажа ~12 575 ₽/г.</li>
+                <li>Полный суверенитет: актив вне банковской и цифровой системы.</li>
+              </ul>
+              <div class="tips-group">
+                <div class="tips-group__label">Плюсы и минусы</div>
+                <div class="tip">✅ «Золото в руках» — защита от системных рисков</div>
+                <div class="tip">✅ Психологическое спокойствие и полная независимость</div>
+                <div class="tip">⚠️ Высокий спред — при обратной продаже теряется часть стоимости</div>
+                <div class="tip">⚠️ НДС 20% при покупке слитков снижает доходность</div>
+                <div class="tip">⚠️ Вопросы безопасности и организации хранения</div>
+              </div>
+              <div class="ideal-for"><span class="ideal-for__icon">🎯</span><div class="ideal-for__text"><span class="ideal-for__label">Идеально для</span><span class="ideal-for__value">Крупного капитала как «страховой резерв» на десятилетия</span></div></div>
+            </div>
+
+            <div class="item">
+              <div class="item-hd">
+                <span class="it-num">5</span>
+                <h3 class="it-title">Акции золотодобывающих компаний</h3>
+              </div>
+              <ul class="it-body">
+                <li>Покупая акции «Полюса» или «Полиметалла», вы инвестируете в бизнес по добыче золота.</li>
+                <li>Пример: Полюс (<strong>PLZL</strong>) — ~2 170 ₽ за акцию.</li>
+                <li>Потенциал роста выше, чем у «чистого» золота — за счёт операционного рычага.</li>
+                <li>Возможность получать дивиденды.</li>
+              </ul>
+              <div class="tips-group">
+                <div class="tips-group__label">Плюсы и минусы</div>
+                <div class="tip">✅ Дивидендный доход в дополнение к росту</div>
+                <div class="tip">✅ Доступность через любой брокерский счёт</div>
+                <div class="tip">⚠️ Акции могут падать даже при росте цены золота</div>
+                <div class="tip">⚠️ Корпоративные, геополитические и операционные риски</div>
+                <div class="tip">⚠️ Более высокая волатильность по сравнению с металлом</div>
+              </div>
+              <div class="ideal-for"><span class="ideal-for__icon">🎯</span><div class="ideal-for__text"><span class="ideal-for__label">Идеально для</span><span class="ideal-for__value">Готовых к умеренному риску ради потенциала роста</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════
+         BLOCK 3 · Доля золота в портфеле
+    ════════════════════════════════════════════════════ -->
+    <section class="b3">
+      <div class="b3__inner">
+        <header class="sh">
+          <span class="sh__badge">Блок 03 · Портфельный подход</span>
+          <h2 class="sh__title">Как правильно распределить<br>долю золота</h2>
+        </header>
+
+        <div class="b3__layout">
+          <div class="b3__content">
+
+            <div class="b3-item">
+              <div class="b3-item__num">5–10%</div>
+              <h3 class="b3-item__title">Оптимальная доля золота в сбалансированном портфеле</h3>
+              <ul class="it-body">
+                <li>Такая доля обеспечивает защитную функцию без ущерба для общей доходности.</li>
+                <li>При горизонте от 5 лет золото сглаживает просадки остального портфеля.</li>
+                <li>Регулярность и дисциплина важнее идеального момента для входа.</li>
+              </ul>
+              <div class="company-tiles">
+                <div class="company-tile">
+                  <div>
+                    <div class="company-tile__name">Полюс</div>
+                    <div class="company-tile__ticker">PLZL · МосБиржа</div>
+                  </div>
+                  <div class="company-tile__price">~2 170 ₽</div>
+                </div>
+                <div class="company-tile">
+                  <div>
+                    <div class="company-tile__name">Т-Капитал Золото</div>
+                    <div class="company-tile__ticker">TGLD · БПИФ</div>
+                  </div>
+                  <div class="company-tile__price">~13,7 ₽</div>
+                </div>
+                <div class="company-tile">
+                  <div>
+                    <div class="company-tile__name">Золото на бирже</div>
+                    <div class="company-tile__ticker">GLDRUB_TOM · Т-Инвестиции</div>
+                  </div>
+                  <div class="company-tile__price">~11 171 ₽/г</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="b3__visual">
+            <div>
+              <div class="portfolio-ring">
+                <div class="portfolio-ring__inner">
+                  <div class="portfolio-ring__num">10%</div>
+                  <div class="portfolio-ring__label">Золото в портфеле</div>
+                </div>
+              </div>
+              <div class="portfolio-ring__legend">
+                <div class="legend-item">
+                  <div class="legend-dot" style="background: rgba(218,165,32,0.9);"></div>
+                  Золото
+                </div>
+                <div class="legend-item">
+                  <div class="legend-dot" style="background: rgba(13,31,82,0.85);"></div>
+                  Прочие активы
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════
+         CHECKLIST · CLOSING
+    ════════════════════════════════════════════════════ -->
+    <section class="bcl">
+      <div class="bcl__inner">
+        <header class="sh">
+          <span class="sh__badge">Итог</span>
+          <h2 class="sh__title">Чек-лист инвестора в золото</h2>
+        </header>
+
+        <div class="bcl__grid">
+          <div class="cl-item" onclick="this.classList.toggle('done')"><span class="cl-box">✓</span><span class="cl-text">Открыть брокерский счёт (если ещё нет)</span></div>
+          <div class="cl-item" onclick="this.classList.toggle('done')"><span class="cl-box">✓</span><span class="cl-text">Определить долю золота: 5–10% от портфеля</span></div>
+          <div class="cl-item" onclick="this.classList.toggle('done')"><span class="cl-box">✓</span><span class="cl-text">Выбрать инструмент под свой горизонт и бюджет</span></div>
+          <div class="cl-item" onclick="this.classList.toggle('done')"><span class="cl-box">✓</span><span class="cl-text">Для начинающих: попробовать БПИФ (TGLD) — вход от нескольких рублей</span></div>
+          <div class="cl-item" onclick="this.classList.toggle('done')"><span class="cl-box">✓</span><span class="cl-text">Настроить регулярное пополнение (раз в месяц)</span></div>
+          <div class="cl-item" onclick="this.classList.toggle('done')"><span class="cl-box">✓</span><span class="cl-text">Учесть налоговые особенности выбранного инструмента</span></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════
+       OUTRO + SOCIALS · shared dark background
+  ════════════════════════════════════════════════════ -->
+  <div class="dark-section">
+  <div class="outro-wrapper">
+    <div class="outro">
+      <div class="outro__clip">
+        <div class="hero__bg"></div>
+        <div class="outro__dots"></div>
+        <div class="outro__circuit">
+          <svg viewBox="0 0 640 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="#4a8aff" stroke-width="1" fill="none">
+              <line x1="0"   y1="500" x2="280" y2="0"/>
+              <line x1="90"  y1="500" x2="370" y2="0"/>
+              <line x1="180" y1="500" x2="460" y2="0"/>
+              <line x1="270" y1="500" x2="550" y2="0"/>
+              <line x1="360" y1="500" x2="640" y2="60"/>
+              <line x1="30"  y1="420" x2="210" y2="420"/>
+              <line x1="110" y1="308" x2="330" y2="308"/>
+              <line x1="195" y1="192" x2="430" y2="192"/>
+              <line x1="275" y1="88"  x2="510" y2="88"/>
+            </g>
+            <g fill="#6aa0ff">
+              <circle cx="30"  cy="420" r="2.5"/> <circle cx="210" cy="420" r="2.5"/>
+              <circle cx="110" cy="308" r="3"/>   <circle cx="330" cy="308" r="2.5"/>
+              <circle cx="195" cy="192" r="3"/>   <circle cx="430" cy="192" r="2.5"/>
+              <circle cx="275" cy="88"  r="3"/>   <circle cx="510" cy="88"  r="2.5"/>
+            </g>
+            <g fill="#a0c8ff" opacity="0.9">
+              <circle cx="110" cy="308" r="4.5"/>
+              <circle cx="195" cy="192" r="4.5"/>
+              <circle cx="275" cy="88"  r="4.5"/>
+            </g>
+          </svg>
+        </div>
+        <div class="outro__inner">
+          <div class="outro__content">
+            <h2 class="outro__title">Золото — это не про «быстро заработать».</h2>
+            <div class="hero__divider"></div>
+            <p class="outro__sub">Это про уверенность: когда всё вокруг нестабильно, часть капитала остаётся под защитой. Выбирайте инструмент под свои цели, горизонт и уровень комфорта.</p>
+            <p class="outro__note">Регулярность и дисциплина важнее идеального момента для входа.</p>
+          </div>
+          <div class="outro__visual">
+            <img src="image-Photoroom (13) 1.png" alt="Золотой щит">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════
+       SOCIALS
+  ════════════════════════════════════════════════════ -->
+  <section class="bsoc">
+    <h2 class="bsoc__heading">Больше полезного контента — в моих социальных сетях. Подписывайтесь, чтобы не пропустить важное</h2>
+    <div class="bsoc__card">
+      <a class="social-link" href="https://vk.com/volkovacapital" target="_blank" rel="noopener">
+        <div class="social-icon" style="background:#0077FF;">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.019-1.304.587-1.496c.596-.19 1.365 1.26 2.179 1.818.614.422 1.08.33 1.08.33l2.17-.03s1.137-.071.598-1.011c-.044-.076-.314-.658-1.618-1.862-1.364-1.259-1.182-1.055.462-3.231.999-1.332 1.398-2.146 1.272-2.494-.12-.332-.856-.244-.856-.244l-2.44.015s-.181-.025-.315.055c-.132.078-.216.262-.216.262s-.386 1.03-.901 1.904c-1.086 1.844-1.52 1.943-1.698 1.828-.413-.267-.31-1.075-.31-1.648 0-1.793.272-2.54-.529-2.733-.265-.064-.46-.106-1.138-.113-.87-.009-1.605.003-2.021.207-.277.135-.491.437-.361.454.161.021.527.099.72.363.249.341.24 1.107.24 1.107s.143 2.11-.334 2.372c-.327.18-.776-.187-1.74-1.861-.494-.855-.869-1.801-.869-1.801s-.072-.178-.202-.273c-.157-.115-.376-.152-.376-.152l-2.322.015s-.348.01-.476.162c-.114.135-.009.414-.009.414s1.818 4.25 3.876 6.394c1.888 1.97 4.03 1.84 4.03 1.84h.972z" fill="#fff"/></svg>
+        </div>
+        <div class="social-text">Мой ВК &mdash; <span>vk.com/volkovacapital</span></div>
+      </a>
+      <a class="social-link" href="https://m.youtube.com/@capitalvolkova" target="_blank" rel="noopener">
+        <div class="social-icon" style="background:#FF0000;">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.8 8.001a2.75 2.75 0 0 0-1.937-1.948C18.2 5.6 12 5.6 12 5.6s-6.2 0-7.863.453A2.75 2.75 0 0 0 2.2 8.001 28.8 28.8 0 0 0 1.75 12a28.8 28.8 0 0 0 .45 3.999 2.75 2.75 0 0 0 1.937 1.947C5.8 18.4 12 18.4 12 18.4s6.2 0 7.863-.454a2.75 2.75 0 0 0 1.937-1.947A28.8 28.8 0 0 0 22.25 12a28.8 28.8 0 0 0-.45-3.999z" fill="#fff"/><path d="M9.75 15l5.25-3-5.25-3v6z" fill="#FF0000"/></svg>
+        </div>
+        <div class="social-text">Мой Ютуб &mdash; <span>youtube.com/@capitalvolkova</span></div>
+      </a>
+      <a class="social-link" href="https://max.ru/volkovacapital" target="_blank" rel="noopener">
+        <div class="social-icon social-icon--img social-icon--max">
+          <img src="../Гайд/MAX LOGO.webp" alt="MAX">
+        </div>
+        <div class="social-text">Мой MAX-канал &mdash; <span>max.ru/volkovacapital</span></div>
+      </a>
+      <a class="social-link" href="https://t.me/volkovacapital" target="_blank" rel="noopener">
+        <div class="social-icon social-icon--img">
+          <img src="../Гайд/Telegram_logo.svg.webp" alt="Telegram">
+        </div>
+        <div class="social-text">Мой Telegram &mdash; <span>t.me/volkovacapital</span></div>
+      </a>
+    </div>
+  </section>
+  </div><!-- /.dark-section -->
+
+</body>
+</html>
