@@ -650,83 +650,136 @@
     /* ═══════════════════════════════════════════════════
        RESPONSIVE
     ═══════════════════════════════════════════════════ */
+
+    /* ── 1024px — планшет горизонтальный ──────────────── */
     @media (max-width: 1024px) {
       .hero__inner { padding: 56px 0 56px 56px; }
-      .hero__content { max-width: 65%; }
+      .hero__content { max-width: 60%; padding-right: 16px; }
       .b0__inner { gap: 40px; }
       .b1__inner { grid-template-columns: 1fr; }
-      .b1__visual { flex-direction: row; padding: 40px 0 0; justify-content: center; gap: 16px; }
+      .b1__visual { flex-direction: row; padding: 32px 0 0; justify-content: center; gap: 16px; }
       .gold-bar { max-width: 200px; }
       .price-ticker { max-width: 240px; }
-      .b3__layout { grid-template-columns: 1fr 280px; gap: 40px; }
+      .b3__layout { grid-template-columns: 1fr 260px; gap: 40px; }
       .outro__inner { padding: 56px; }
     }
 
+    /* ── 768px — планшет вертикальный ─────────────────── */
     @media (max-width: 768px) {
+      /* Hero */
       .hero-wrapper { min-height: auto; padding: 16px; }
       .hero, .hero__clip { border-radius: 14px; }
       .hero__visual { display: none; }
-      .hero__inner { padding: 48px 40px; min-height: auto; }
-      .hero__content { max-width: 100%; }
+      .hero__inner { padding: 48px 32px; min-height: auto; }
+      .hero__content { max-width: 100%; padding-right: 0; }
       .hero__subtitle { white-space: normal; }
       .subtitle-eye { max-width: 100%; }
 
-      .b0__inner, .b1__inner, .b2__inner, .b3__inner,
-      .b4__inner, .b5__inner, .bcl__inner { padding: 0 32px; }
-      .b0, .b1, .b2, .b3, .b4, .b5, .bcl { padding: 40px 0; }
-      .sh { margin-bottom: 28px; }
+      /* Общие отступы */
+      .b0__inner, .b1__inner, .b2__inner, .b3__inner, .bcl__inner { padding: 0 28px; }
+      .b0, .b1, .b2, .b3, .bcl { padding: 40px 0; }
+      .sh { margin-bottom: 24px; }
 
-      .b0__inner { grid-template-columns: 1fr; }
+      /* Block 0 */
+      .b0__inner { grid-template-columns: 1fr; gap: 28px; }
       .b0__stats { flex-direction: row; gap: 12px; }
       .stat-card { flex: 1; }
 
+      /* Block 1 */
       .b1__inner { grid-template-columns: 1fr; }
       .b1__content { padding-right: 0; }
-      .b1__visual { flex-direction: row; padding: 28px 0 0; }
+      .b1__visual { display: none; }
 
-      .b2__row { grid-template-columns: 1fr; gap: 0; }
-      .b2__row .item:first-child { padding-bottom: 24px; border-bottom: 1px solid #f0f2f8; }
-      .b2 .tips-group, .b2 .item-callout, .b2 .ideal-for { margin-left: 0; }
+      /* Block 2 */
+      .b2__row { grid-template-columns: 1fr; }
+      .b2__row .item:first-child { padding-bottom: 20px; border-bottom: 1px solid #f0f2f8; }
       .b2 .it-body { padding-left: 0; }
+      .b2 .tips-group, .b2 .item-callout, .b2 .ideal-for { margin-left: 0; }
 
-      .b3__layout { grid-template-columns: 1fr; gap: 28px; }
+      /* Block 3 */
+      .b3__layout { grid-template-columns: 1fr; gap: 32px; }
       .b3__visual { justify-content: center; }
+      .portfolio-ring { width: 220px; height: 220px; }
+      .portfolio-ring__inner { width: 144px; height: 144px; }
+      .portfolio-ring__num { font-size: 26px; }
+      .company-tiles { gap: 8px; }
 
-      .outro-wrapper { padding: 32px 16px; }
-      .outro__inner { flex-direction: column; padding: 48px 40px; gap: 28px; min-height: auto; }
+      /* Ideal-for */
+      .b1 .ideal-for, .b2 .ideal-for { margin-left: 0; }
+
+      /* Outro */
+      .outro-wrapper { padding: 28px 16px; }
+      .outro__inner { flex-direction: column; padding: 44px 36px; gap: 24px; min-height: auto; }
       .outro__visual { display: none; }
     }
 
+    /* ── 480px — мобильный ─────────────────────────────── */
     @media (max-width: 480px) {
+      /* Hero */
       .hero__visual { display: none; }
-      .hero__inner { padding: 40px 24px 44px; min-height: auto; }
-      .hero__content { max-width: 100%; }
-      .hero__author { margin-top: 28px; }
+      .hero__inner { padding: 36px 20px 40px; min-height: auto; }
+      .hero__content { max-width: 100%; padding-right: 0; }
+      .hero__author { margin-top: 24px; }
+      .hero__disclaimer { font-size: 10px; }
 
-      .b0__inner, .b1__inner, .b2__inner, .b3__inner,
-      .b4__inner, .b5__inner, .bcl__inner { padding: 0 16px; }
-      .b0, .b1, .b2, .b3, .b4, .b5, .bcl { padding: 28px 0; }
+      /* Общие отступы */
+      .b0__inner, .b1__inner, .b2__inner, .b3__inner, .bcl__inner { padding: 0 16px; }
+      .b0, .b1, .b2, .b3, .bcl { padding: 28px 0; }
+      .sh__title { font-size: 20px; }
 
-      .b0__stats { flex-direction: column; }
-      .stat-card__num { font-size: 40px; }
+      /* Block 0 — стат карты в колонку */
+      .b0__inner { gap: 20px; }
+      .b0__stats { flex-direction: column; gap: 10px; }
+      .stat-card { padding: 20px 20px 18px; }
+      .stat-card__num { font-size: 44px; }
 
-      .b1 .it-body { padding-left: 0; }
-      .b1 .tips-group, .b1 .item-callout, .b1 .ideal-for { margin-left: 0; }
+      /* Block 1 — убрать декоративные номера, сбросить отступы */
+      .b1__visual { display: none; }
       .b1 .it-num { display: none; }
       .b1 .item-hd { gap: 0; }
+      .b1 .it-body { padding-left: 0; }
+      .b1 .tips-group, .b1 .item-callout, .b1 .ideal-for { margin-left: 0; }
 
+      /* Block 2 */
       .b2 .it-num { display: none; }
       .b2 .item-hd { gap: 0; }
       .b2 .it-body { padding-left: 0; }
+      .b2 .tips-group, .b2 .item-callout, .b2 .ideal-for { margin-left: 0; }
 
-      .b3-item__num { font-size: 52px; }
+      /* Block 3 */
+      .b3__layout { gap: 24px; }
+      .b3-item__num { font-size: 48px; }
+      .portfolio-ring { width: 180px; height: 180px; }
+      .portfolio-ring__inner { width: 118px; height: 118px; }
+      .portfolio-ring__num { font-size: 22px; }
+      .portfolio-ring__label { font-size: 9px; }
+      .company-tile { padding: 10px 14px; }
+      .company-tile__name { font-size: 13px; }
+      .company-tile__price { font-size: 13px; }
 
-      .tips-group { padding: 16px 18px; }
+      /* Ideal-for */
+      .ideal-for { max-width: 100%; }
+      .ideal-for__value { font-size: 13px; }
+
+      /* Tips */
+      .tips-group { padding: 14px 16px; }
       .tip { font-size: 13px; }
+      .tips-group__label { font-size: 9.5px; }
 
-      .outro-wrapper { padding: 20px 12px; }
-      .outro__inner { padding: 36px 24px; }
-      .outro__title { font-size: clamp(22px, 6vw, 32px); }
+      /* Checklist */
+      .cl-item { padding: 12px 14px; gap: 10px; }
+
+      /* Socials */
+      .bsoc { padding: 0 16px 48px; }
+      .bsoc__card { max-width: 100%; }
+      .bsoc__heading { font-size: 16px; }
+
+      /* Outro */
+      .outro-wrapper { padding: 16px 12px; }
+      .outro__inner { padding: 32px 20px; }
+      .outro__title { font-size: clamp(20px, 6vw, 30px); }
+      .outro__sub { font-size: 14px; }
+      .outro__note { font-size: 13px; padding: 10px 18px; }
     }
   </style>
 </head>
