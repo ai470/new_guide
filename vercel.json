@@ -1,6 +1,8 @@
 {
   "rewrites": [
     { "source": "/gold", "destination": "/index.html" },
-    { "source": "/gold/", "destination": "/index.html" }
+    { "source": "/gold/", "destination": "/index.html" },
+    { "source": "/save_money", "destination": "https://savings-guide.vercel.app" },
+    { "source": "/save_money/:path*", "destination": "https://savings-guide.vercel.app/:path*" }
   ]
 }
