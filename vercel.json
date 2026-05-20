@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/gold", "destination": "/index.html" },
+    { "source": "/gold/", "destination": "/index.html" }
+  ]
+}
