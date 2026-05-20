@@ -412,6 +412,23 @@
     .price-ticker__val { font-weight: 800; color: #0d1f52; }
     .price-ticker__val--up { color: #2a7a2a; }
 
+    /* Phone screenshots in b1__visual */
+    .b1__phones {
+      width: 100%; margin-top: 32px;
+      display: flex; flex-direction: column; gap: 24px; align-items: center;
+    }
+    .b1__phone { width: 260px; }
+    .b1__phone img {
+      width: 100%; display: block;
+      filter: drop-shadow(0 12px 28px rgba(0,0,0,0.18));
+    }
+    .b1__phone--flat img {
+      border-radius: 16px;
+      border: 1px solid #e4e8f4;
+      box-shadow: 0 8px 24px rgba(13,31,82,0.10);
+      filter: none;
+    }
+
     /* ── App/phone screenshots in items ───────────── */
     .item__screen {
       float: right;
@@ -490,14 +507,26 @@
     .b2 .item-callout { margin-left: 56px; margin-top: 14px; }
     .b2 .ideal-for { margin-left: 56px; }
 
-    /* ── Block 2 screenshot (Сбербанк слитки) ──────── */
-    .b2__screenshot {
-      margin-top: 16px;
-      border-radius: 10px; overflow: hidden;
-      border: 1px solid #e4e8f4;
-      box-shadow: 0 4px 16px rgba(13,31,82,0.08);
+    /* ── Block 2 bottom screenshots row ────────────── */
+    .b2__screens {
+      display: flex; align-items: flex-end; gap: 32px;
+      margin-top: 40px; padding-top: 32px;
+      border-top: 1px solid #f0f2f8;
     }
-    .b2__screenshot img { width: 100%; display: block; }
+    .b2__screen-item { flex: 1; }
+    .b2__screen-item img { width: 100%; display: block; }
+    .b2__screen-item--flat {
+      padding-left: 48px;
+    }
+    .b2__screen-item--flat img {
+      border-radius: 12px;
+      border: 1px solid #e4e8f4;
+      box-shadow: 0 4px 20px rgba(13,31,82,0.09);
+    }
+    .b2__screen-item:not(.b2__screen-item--flat) img {
+      filter: drop-shadow(0 12px 28px rgba(0,0,0,0.16));
+      max-width: 280px; margin: 0 auto;
+    }
 
     /* ══════════════════════════════════════════════════════
        BLOCK 3 — Акции золотодобытчиков
@@ -760,9 +789,9 @@
       .hero__content { max-width: 60%; padding-right: 16px; }
       .b0__inner { gap: 40px; }
       .b1__inner { grid-template-columns: 1fr; }
-      .b1__visual { flex-direction: row; padding: 32px 0 0; justify-content: center; gap: 16px; }
-      .gold-bar { max-width: 200px; }
-      .price-ticker { max-width: 240px; }
+      .b1__visual { flex-direction: row; flex-wrap: wrap; padding: 32px 0 0; justify-content: center; gap: 16px; }
+      .b1__phones { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 16px; }
+      .b1__phone { width: 160px; }
       .b3__layout { grid-template-columns: 1fr 260px; gap: 40px; }
       .outro__inner { padding: 56px; }
     }
@@ -856,7 +885,7 @@
       .b2 .it-body { padding-left: 0; }
       .b2 .tips-group, .b2 .item-callout, .b2 .ideal-for { margin-left: 0; }
       .item__screen { display: none; }
-      .b2__screenshot { display: none; }
+      .b2__screens { display: none; }
 
       /* Block 3 */
       .b3__layout { gap: 24px; }
@@ -1022,9 +1051,6 @@
           <div class="items">
 
             <div class="item">
-              <div class="item__screen">
-                <img src="image-Photoroom (15).png" alt="TGLD в приложении Т-Инвестиции">
-              </div>
               <div class="item-hd">
                 <span class="it-num">1</span>
                 <h3 class="it-title">Биржевые фонды на золото (БПИФ)</h3>
@@ -1046,9 +1072,6 @@
             </div>
 
             <div class="item">
-              <div class="item__screen item__screen--flat">
-                <img src="image1.jpg" alt="ОМС счёт — золото в приложении банка">
-              </div>
               <div class="item-hd">
                 <span class="it-num">2</span>
                 <h3 class="it-title">Обезличенный металлический счёт (ОМС)</h3>
@@ -1072,9 +1095,6 @@
             </div>
 
             <div class="item">
-              <div class="item__screen">
-                <img src="image-removebg-preview (1).png" alt="GLDRUB_TOM в приложении Т-Инвестиции">
-              </div>
               <div class="item-hd">
                 <span class="it-num">3</span>
                 <h3 class="it-title">Покупка золота на бирже (GLDRUB_TOM)</h3>
@@ -1119,6 +1139,17 @@
               <span class="price-ticker__val">~11 171 ₽/г</span>
             </div>
           </div>
+          <div class="b1__phones">
+            <div class="b1__phone">
+              <img src="image-Photoroom (15).png" alt="TGLD в приложении Т-Инвестиции">
+            </div>
+            <div class="b1__phone b1__phone--flat">
+              <img src="image1.jpg" alt="ОМС счёт — золото в приложении банка">
+            </div>
+            <div class="b1__phone">
+              <img src="image-removebg-preview (1).png" alt="GLDRUB_TOM в приложении Т-Инвестиции">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1156,15 +1187,9 @@
                 <div class="tip">⚠️ Вопросы безопасности и организации хранения</div>
               </div>
               <div class="ideal-for"><span class="ideal-for__icon">🎯</span><div class="ideal-for__text"><span class="ideal-for__label">Идеально для</span><span class="ideal-for__value">Крупного капитала как «страховой резерв» на десятилетия</span></div></div>
-              <div class="b2__screenshot">
-                <img src="image6.png" alt="Слитки на сайте Сбербанка">
-              </div>
             </div>
 
             <div class="item">
-              <div class="item__screen">
-                <img src="image-Photoroom (14).png" alt="Акции Полюс PLZL в Т-Инвестициях">
-              </div>
               <div class="item-hd">
                 <span class="it-num">5</span>
                 <h3 class="it-title">Акции золотодобывающих компаний</h3>
@@ -1184,10 +1209,19 @@
                 <div class="tip">⚠️ Более высокая волатильность по сравнению с металлом</div>
               </div>
               <div class="ideal-for"><span class="ideal-for__icon">🎯</span><div class="ideal-for__text"><span class="ideal-for__label">Идеально для</span><span class="ideal-for__value">Готовых к умеренному риску ради потенциала роста</span></div></div>
-              <div class="item__clearfix"></div>
             </div>
           </div>
         </div>
+
+        <div class="b2__screens">
+          <div class="b2__screen-item b2__screen-item--flat">
+            <img src="image6.png" alt="Слитки на сайте Сбербанка">
+          </div>
+          <div class="b2__screen-item">
+            <img src="image-Photoroom (14).png" alt="Акции Полюс PLZL в Т-Инвестициях">
+          </div>
+        </div>
+
       </div>
     </section>
 
