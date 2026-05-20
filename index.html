@@ -418,6 +418,7 @@
       display: flex; flex-direction: column; gap: 24px; align-items: center;
     }
     .b1__phone { width: 260px; }
+    .b1__phone:last-child { width: 290px; margin-top: 32px; }
     .b1__phone img {
       width: 100%; display: block;
       filter: drop-shadow(0 12px 28px rgba(0,0,0,0.18));
@@ -509,7 +510,7 @@
 
     /* ── Block 2 bottom screenshots row ────────────── */
     .b2__screens {
-      display: flex; align-items: flex-end; gap: 32px;
+      display: flex; align-items: center; gap: 32px;
       margin-top: 40px; padding-top: 32px;
       border-top: 1px solid #f0f2f8;
     }
@@ -823,13 +824,21 @@
       /* Block 1 */
       .b1__inner { grid-template-columns: 1fr; }
       .b1__content { padding-right: 0; }
-      .b1__visual { display: none; }
+      .b1__visual { flex-direction: column; padding: 24px 0 0; align-items: center; }
+      .gold-bar { max-width: 100%; }
+      .price-ticker { max-width: 100%; }
+      .b1__phones { flex-direction: column; align-items: center; gap: 24px; width: 100%; }
+      .b1__phone { width: 100%; max-width: 360px; }
+      .b1__phone:last-child { width: 100%; max-width: 360px; margin-top: 0; }
 
       /* Block 2 */
       .b2__row { grid-template-columns: 1fr; }
       .b2__row .item:first-child { padding-bottom: 20px; border-bottom: 1px solid #f0f2f8; }
       .b2 .it-body { padding-left: 0; }
       .b2 .tips-group, .b2 .item-callout, .b2 .ideal-for { margin-left: 0; }
+      .b2__screens { flex-direction: column; gap: 24px; align-items: center; }
+      .b2__screen-item--flat { padding-left: 0; width: 100%; }
+      .b2__screen-item:not(.b2__screen-item--flat) { width: 100%; max-width: 360px; }
 
       /* Block 3 */
       .b3__layout { grid-template-columns: 1fr; gap: 32px; }
@@ -873,7 +882,11 @@
       .stat-card__num { font-size: 44px; }
 
       /* Block 1 — убрать декоративные номера, сбросить отступы */
-      .b1__visual { display: none; }
+      .b1__visual { padding: 16px 0 0; }
+      .gold-bar, .price-ticker { display: none; }
+      .b1__phones { gap: 20px; }
+      .b1__phone { width: 100%; max-width: 320px; }
+      .b1__phone:last-child { width: 100%; max-width: 320px; margin-top: 0; }
       .b1 .it-num { display: none; }
       .b1 .item-hd { gap: 0; }
       .b1 .it-body { padding-left: 0; }
@@ -884,8 +897,8 @@
       .b2 .item-hd { gap: 0; }
       .b2 .it-body { padding-left: 0; }
       .b2 .tips-group, .b2 .item-callout, .b2 .ideal-for { margin-left: 0; }
-      .item__screen { display: none; }
-      .b2__screens { display: none; }
+      .b2__screen-item--flat { padding-left: 0; width: 100%; }
+      .b2__screen-item:not(.b2__screen-item--flat) { width: 100%; max-width: 320px; }
 
       /* Block 3 */
       .b3__layout { gap: 24px; }
